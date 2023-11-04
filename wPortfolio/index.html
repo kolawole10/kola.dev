@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kola.dev</title>
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+
+</head>
+
+<body>
+    <nav id="desktop-nav">
+
+        <div class="logo"><img src="./assests/codingSymbol.png" alt="" class="ico"> kola.dev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">kola.dev</div>
+        <div class="hamburger-menu">
+            <!-- JS open and close dropdown -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section START -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <!-- Portfolio picture -->
+            <img src="./assests/Kprofile.png" alt="profile picture">
+        </div>
+
+        <div class="section__text">
+            <p class="section_text__p1"> Hello I'm</p>
+            <h1 class="title">Kolawole Martins</h1>
+            <p class="section__text__p2">Software Developer</p>
+
+            <!-- PDF Download -->
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/Kola Martins Resume.pdf')">
+                    Download CV
+                </button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+
+            <!-- socials profiles  -->
+            <div id="socials-container">
+
+                <!-- linkedin profile -->
+                <img src="./assests/linkedin.png" alt="linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/kola-martins/'">
+
+                <!-- Github profile  -->
+                <img src="./assests/github.png" alt="linkedin profile" class="icon"
+                    onclick="location.href='https://github.com/kolawole10/'">
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Profile Section END -->
+
+
+    <!-- About Section START -->
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- Second Image -->
+            <div class="section__pic-container">
+                <img src="./assests/graduation-pic-bw.png" alt="Black Pic" class="about-pic">
+            </div>
+            <!-- About Me  -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <!-- Experience  -->
+                        <img src="./assests/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1+ years <br> Technical Consultant</p>
+                    </div>
+                    <div class="details-container">
+                        <!-- Education  -->
+                        <img src="./assests/education2.png" alt="experience icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc Honors Computer Science <br>Trent University </p>
+                    </div>
+
+
+                </div>
+                <div class="text-container">
+                    <p> Experienced professional in the field of technical support, specializing in network maintenance
+                        and system
+                        upgrades. With a strong foundation in computer science and a background in technical consulting,
+                        now poised to
+                        transition into a dynamic role within the software development industry.
+                        Actively seeking software development roles where I can apply my technical acumen, foster
+                        professional
+                        growth, and work on exciting projects that push the boundaries of innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- About Section END -->
+
+
+    <!-- Experience Section START -->
+    <section id="experience">
+        <p class="section__text__p1"> Explore My</p>
+
+        <!-- Work Experience  -->
+        <h1 class="title">Professional Experience</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <!-- First Experience Column -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Consultant </h2>
+                    <h3>TCP Network Services</h3>
+                    <h4>Mississauga, ON, Canada </h4>
+                    <h5>July 2022 – Sep 2023</h5>
+
+                    <div class="article-container">
+
+
+                        <div>
+
+                            <p>&#8226; Executed code upgrades for client devices, ensuring seamless integration and
+                                improved
+                                functionality.</p>
+                            <p>&#8226; Provided expert guidance and training to users, swiftly addressing identified
+                                technical challenges and
+                                optimizing their interactions with the technology.</p>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- Second Experience Column -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Engineering Co-op </h2>
+                    <h3>Trent University</h3>
+                    <h4>Peterborough, ON, Canada </h4>
+                    <h5>September 2021 – May 2022</h5>
+
+                    <div class="article-container">
+
+
+                        <div>
+
+                            <p>&#8226; Developed an Android and iOS app which enabled students to perform their analysis
+                                at the
+                                crime scene itself, rather than waiting
+                                to do so back at the lab.
+                            </p>
+                            <p>&#8226; 8 months mobile application development using Flutter, an Open-Source UI SDK
+                                which uses Dart as the
+                                programming language.
+                            </p>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Experience -->
+
+            <h1 class="title">Technical Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+
+                    <!-- First Experience Column -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assests/hmtl-bw-png.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./assests/css-bw.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+
+
+
+                            <article>
+                                <img src="./assests/bootstrap-bw.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>Bootstrap</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+
+
+                            <article>
+                                <img src="./assests/github.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>Github</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="" alt="" class="icon">
+                                <div>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </article>
+
+
+                            <article>
+                                <img src="" alt="" class="icon">
+                                <div>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </article>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Second Experience Column -->
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Programming Language</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assests/c-bw.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>C#</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="./assests/c++.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+
+
+                            <article>
+                                <img src="./assests/python-bw.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+
+
+
+                            <article>
+                                <img src="./assests/js-png.png" alt="Experience Icon" class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+
+
+                            <article>
+                                <img src="" alt="" class="icon">
+                                <div>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </article>
+
+                            <article>
+                                <img src="" alt="" class="icon">
+                                <div>
+                                    <h3></h3>
+                                    <p></p>
+                                </div>
+                            </article>
+
+
+
+
+                            <!-- <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assests/checkmark.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Arrow -->
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+
+    </section>
+
+    <!-- Experience Section END -->
+
+
+    <!-- Projects Sections START-->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <!-- FIRST ROW OF PROJECTS START -->
+        <div class="experience-details-container">
+            <div class="about-containers">
+
+                <!-- Different Projects -->
+                <!-- Project Container 1 -->
+                <div class="details-container color-container">
+                    <h2 class="exprience-sub-title project-title">Project Sherlock</h2>
+                    <div class="article-container">
+                        <img src="./assests/project-sherlock.png" alt="project 1" class="project-img">
+                    </div>
+                    <br>
+                    <h4>An Android and iOS app created for the Forensics Department at Trent University </h4>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/kolawole10/Project-Sherlock'">Github</button>
+
+
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://www.figma.com/file/FISOCzTKLMI5mFqd1ZeScE/Project-Sherlock?type=design&node-id=0-1&mode=design'">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <!-- Project Container 2 -->
+                <div class="details-container color-container">
+                    <h2 class="exprience-sub-title project-title">BiteBuddy</h2>
+                    <div class="article-container">
+
+                        <img src="./assests/bitebuddy phone.png" alt="project 1" class="project-img">
+                    </div>
+
+                    <br> <br>
+                    <h4>Culinary convenience at your fingertips. BiteBuddy: Swift, diverse, and delicious. </h4>
+                    <br>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/kolawole10/BiteBuddy'">Github</button>
+
+
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='../food website/index.html'">Live Demo</button>
+                    </div>
+                </div>
+
+                <!-- Project Container 3 -->
+                <div class="details-container color-container">
+                    <h2 class="exprience-sub-title project-title">Expedition Express</h2>
+                    <div class="article-container">
+
+                        <img src="./assests/Expedition Express.png" alt="project 1" class="project-img">
+                    </div>
+
+
+                    <br>
+                    <h4 style="margin-bottom: 15px;">Expedition Express: Your ultimate travel companion, seamlessly
+                        organizing and booking global adventures.</h4>
+
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/kolawole10/travel-website'">Github</button>
+
+
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='../travel website/index.html'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <h2 class="exprience-sub-title project-title">FitZen</h2>
+                    <div class="article-container">
+                        <img src="./assests/FitZen Pic.png" alt="project 1" class="project-img">
+                    </div>
+                    <br>
+                    <h4>FitZen: Personalized workouts, progress tracking, community support—all in one intuitive app for
+                        your fitness success. </h4>
+                    <br>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/kolawole10/landing-page/tree/main'">Github</button>
+
+
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='../landing page/index.html'">Live Demo</button>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- END of PROJECTS -->
+            </div>
+
+
+
+        </div>
+
+
+
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <!-- Projects Sections END-->
+
+
+    <!-- Contact Sections START-->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assests/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:kolaw.martins@gmail.com">example@example.com</a></p>
+            </div>
+
+
+            <div class="contact-info-container">
+                <img src="./assests/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/kola-martins/">LinkedIn </a></p>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Contact Sections End-->
+
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#desktop-nav">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+        </div>
+        <p>Copyright &#169; 2023 kola.dev. All rights Resereved.</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
